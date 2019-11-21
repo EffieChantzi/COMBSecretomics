@@ -32,9 +32,10 @@ standalone executable on Windows machines.
 $ git clone  https://github.com/EffieChantzi/COMBSecretomics.git
 ```
 
-#### Directories
-- Code: directory containing the source code 
-- Case Study: directory containing the data of the case study
+### Provided Directories
+- Windows_Executable: command line version of COMBSecretomics for Windows when there is not access to MATLAB
+- source_code: source code of COMBSecretomics 
+- case_study: test data of our example case study
 
 ## Case Study
 These instructions will help you test COMBSecretomics by using the data from our case study.
