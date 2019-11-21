@@ -39,7 +39,7 @@ $ git clone  https://github.com/EffieChantzi/COMBSecretomics.git
 
 ### Getting started with the source code:
 
-- Navigate to 'source_code', open the file 'main.m' with MATLAB and run it (or simply type 'main' in the MATLAB 
+- Open MATLAB, navigate to 'source_code' and run the file 'main.m' (or simply type 'main' in the MATLAB 
   command window).
   
 ### Getting started with the Windows executable:
