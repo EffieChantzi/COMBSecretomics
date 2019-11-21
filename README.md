@@ -1,11 +1,11 @@
 # COMBSecretomics
 
-COMBSecretomics is a pragmatic theoretical and computational framework for secretome-based higher-order combination analysis. It offers the unique opportunity to study how multidrug treatments (i.e., more than 2 drugs) affect the protein release patterns of inactive/unprovoked and active/provoked cell populations. This molecular based evaluation approach of combination treatments opens for systematic studies associated with the secretome of complex diseases where there are still unmet diagnostic anf therapeutic needs. 
+COMBSecretomics is a computational framework for secretome-related higher-order drug combination analysis. It offers the unique opportunity to study how multidrug treatments (i.e., more than 2 drugs) affect the protein release patterns of inactive/unprovoked and active/provoked cell populations. This molecular based evaluation approach of combination treatments opens for systematic studies associated with the secretome of complex diseases where there are still unmet diagnostic and therapeutic needs. 
 
-COMBSecretomics is compatible with any type of microtiter well format and measurement technology that gives values proportional to the corresponding protein concentrations of interest. There are two requirements for the performed experiments though:
+COMBSecretomics is compatible with any type of microtiter well format and measurement technology (typically antibody-based multiplex assays or mass spectrometry) that gives values proportional to the corresponding protein concentrations of interest. There are two requirements for the performed experiments:
 
-1. Cell populations associated with healthy and disease cells must be studied in parallel on the same microtiter plate.
-2. The experimental design must be based on a set of intra-plate (technical) replicate measurements. 
+1. Cell populations associated with healthy and disease cells must be studied in parallel on the same microtiter plate to avoid batch (inter-plate) variability.
+2. The experimental design must be based on a set of intra-plate (technical) replicate measurements in order to perform the associated non-parametric resampling-based statistical analyses. 
 
 
 ## Getting Started
