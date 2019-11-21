@@ -34,53 +34,32 @@ $ git clone  https://github.com/EffieChantzi/COMBSecretomics.git
 
 ### Provided Directories
 - Windows_Executable: command line version of COMBSecretomics for Windows when there is not access to MATLAB
-- source_code: source code of COMBSecretomics 
 - case_study: test data of our example case study
+- source_code: source code of COMBSecretomics 
 
-## Case Study
-These instructions will help you test COMBSecretomics by using the data from our case study.
+### Getting started with the source code:
 
-### Instructions
+- Navigate to 'source_code', open the file 'main.m' with MATLAB and run it (or simply type 'main' in the MATLAB 
+  command window).
+  
+### Getting started with the Windows executable:
 
-1. Open MATLAB
+- Navigate to 'Windows_Executable', right click on the the executable file COMBSecretomics.exe 
+  and choose the option 'Run as Administrator'. Click 'Yes' on the User Account Control.
+  
+### Sequence of user-defined inputs
 
-2. Navigate to the Code directory (see above)
+1. The user is prompted to select interactively the specification file, which is 
+essentially the data file with the raw protein release measurements. It should be in 
+a particular format in order to be valid (see section "Example raw data file" in the
+Supplementary Information). It does not have to be saved in a particular directory for
+COMBSecretomics to run.
 
-3. Run the main.m script:
-```
- main
-```
 
-4. Select interactively the raw data file 
-```
-3510.csv
-``` 
-from the Case Study directory (see above).
 
-5. Enter cut-off threshold for blank filtering (%):
-```
-15
-```
 
-6. Enter cut-off threshold for coefficient of variation (%):
-```
-25
-```
 
-7. Enter number of resamplings:
-```
-500
-```
 
-8. Perform exhaustive subset search for K-means clustering?
-```
-2
-```
-
-9. Select mode for COMBSecretomics:
-```
-2
-```
 
 Running COMBSecretomics with the inputs from steps 5-9 above will reproduce the case study results for the Response Analysis.
 All these inputs can be modified accordingly based on your preference. Feel free to explore!
