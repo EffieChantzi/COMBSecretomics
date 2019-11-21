@@ -10,12 +10,23 @@ COMBSecretomics is compatible with any type of microtiter well format and measur
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+This guide explains how to employ COMBSecretomics using the data of our example case study 
+or any other study provided that the raw protein release data are on the required format 
+(see sections "Example raw data file" and "User-defined inputs" in the Supplementary 
+Information for more details).
 
-### Prerequisites
+### Prerequisites for running the source code of COMBSecretomics
 ```
-MATLAB R2018a or a later version is recommended
+MATLAB: version R2018a or later, Machine Learning Toolbox, Bioinformatics Toolbox.
+OS: Windows, Linux, Mac OS X.
 ```
+
+### If you do not have access to MATLAB
+```
+COMBSecretomics is also provided as a command line tool that can be deployed as a 
+standalone executable on Windows machines.
+```
+
 ### Download 
 ```
 $ git clone  https://github.com/EffieChantzi/COMBSecretomics.git
