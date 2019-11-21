@@ -53,16 +53,13 @@ $ git clone  https://github.com/EffieChantzi/COMBSecretomics.git
 essentially the data file with the raw protein release measurements. It should be in 
 a particular format in order to be valid (see section "Example raw data file" in the
 Supplementary Information). It can be selected from the directory of your choice.
-
 For the current case study, select the file '3510.csv' from the directory 'case_study',
 which is the file with the raw protein release measurements for our example case study.
 '3510' denotes the barcode of the microtiter plate used for the corresponding in vitro  
-experiment. 
-
-You can use your own specification file if you want to analyze a new experiment provided
-that the filename is in the form <barcode.csv> and the contents of the csv file agree
-with the instructions under the section "Example raw data file" in the Supplementary 
-Information.
+experiment. You can use your own specification file if you want to analyze a new 
+experiment provided that the filename is in the form <barcode.csv> and the contents of
+the csv file agree with the instructions under the section "Example raw data file" in 
+the Supplementary Information.
 
 2. The user is asked to select the cut-off threshold (in percent) for the blank filtering
 (see section "Blank filtering" in the Supplementary Information for more details). In our 
