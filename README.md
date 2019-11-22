@@ -4,7 +4,7 @@ COMBSecretomics is a computational framework for secretome-related higher-order 
 
 COMBSecretomics is compatible with any type of microtiter well format and measurement technology (typically antibody-based multiplex assays or mass spectrometry) that gives values proportional to the corresponding protein concentrations of interest. There are two requirements for the performed experiments:
 
-1. Cell populations associated with healthy and disease cells must be studied in parallel on the same microtiter plate to avoid batch (inter-plate) variability.
+1. Healthy and disease associated cells must be studied in parallel on the same microtiter plate to avoid batch (inter-plate) variability.
 2. The experimental design must be based on a set of intra-plate (technical) replicate measurements in order to perform the associated non-parametric resampling-based statistical analyses. 
 
 
