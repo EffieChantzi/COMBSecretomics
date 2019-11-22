@@ -13,7 +13,7 @@ COMBSecretomics is compatible with any type of microtiter well format and measur
 This guide explains how to employ COMBSecretomics using the data of our example case study 
 or any other study provided that the raw protein release data are on the required format 
 (see sections "Example raw data file" and "User-defined inputs" in the Supplementary 
-Information for more details).
+Information of our article for more details).
 
 ### Prerequisites for running the source code of COMBSecretomics
 ```
