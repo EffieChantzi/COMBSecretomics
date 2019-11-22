@@ -49,6 +49,7 @@ $ git clone  https://github.com/EffieChantzi/COMBSecretomics.git
   
 ### Sequence of user-defined inputs
 
+```
 1. The user is prompted to select interactively the CSV specification file, which is 
 essentially the data file with the raw protein release measurements. It should be in 
 a particular format in order to be valid (see section "Example raw data file" in the
@@ -60,35 +61,45 @@ experiment. You can use your own specification file if you want to analyze a new
 experiment provided that the filename is in the form <barcode.csv> and the contents of
 the csv file agree with the instructions under the section "Example raw data file" in 
 the Supplementary Information.
+```
 
+```
 2. The user is asked to select the cut-off threshold (in percent) for the blank filtering
 (see section "Blank filtering" in the Supplementary Information for more details). In our 
 case the value 15 was used. Other values can be set accordingly. A low value ensures that
 protein release measurements with low levels of noise are kept for further analysis.
-
+```
+```
 3. The user is asked to select the cut-off threshold (in percent) for the coefficient of 
 variation of the protein release measurements (see section "Coefficient of variation" in
 the Supplementary Information for more details). In our case study the value 25 was used.
 Other values can be set accordingly. A low value ensures that proteins with low levels of
 technical variability are kept for further analysis.
+```
 
+```
 4. The user is asked to enter the number of resampling based validation datasets to be 
 created (see section "Resampling statistics" in the main article for more details). In 
 our study the value 500 was used. Other values can be set accordingly. The higher this 
 number, the more datasets are going to be created, which is advisable especially if 
 several intra-plate replicate measurements are employed. 
+```
 
+```
 5. The user is asked to select if exhaustive subset search should be performed or not for 
 the visualization of the results from the top-down hierarchical K-Means clustering. Enter
 1 for yes and 2 for no. In our case study, option 1 was used for the main article (Fig. 5) 
 and option 2 for the supplementary information (Supplementary Fig. S18). It is highly 
 recommended to use option 1 for big exhaustive combination panels (i.e., when more than 4 
 single drugs are used to desing an exhaustive experiment).
+```
 
+```
 6. The user is asked to select analysis mode regarding the type of cells to be analyzed. 
 Enter 1 for the analysis of protein release measurements for unstimulated cells and 2 
 for stimulated cells. The user is advised to run both modes sequentially (i.e., one after
 the other).
+```
 
 ### Results
 
