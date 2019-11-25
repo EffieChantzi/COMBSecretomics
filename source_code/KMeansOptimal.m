@@ -1,10 +1,10 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%     Copyright (C) 2019  Efthymia Chantzi      %%
+%%        GNU General Public license v3          %%
+%%                 (LICENSE.md)                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%  KMeansOptimal function - 19/10/29  %%
-
-           %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-           %%                 Chantzi Effie                 %%
-           %%                COMBSecretomics                %%
-           %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This function performs K-Means clustering by employing MATLAB's built-%
