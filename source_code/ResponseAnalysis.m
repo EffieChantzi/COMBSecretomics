@@ -1,10 +1,10 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%     Copyright (C) 2019  Efthymia Chantzi      %%
+%%        GNU General Public license v3          %%
+%%                 (LICENSE.md)                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%  ResponseAnalysis function - 19/10/29  %%
-
-           %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-           %%                 Chantzi Effie                 %%
-           %%                COMBSecretomics                %%
-           %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This function normalizes the protein release differences per plate    %
