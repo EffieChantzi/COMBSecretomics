@@ -27,13 +27,15 @@ COMBSecretomics is also provided as a command line tool that can be deployed as 
 standalone executable on Windows machines. In this case, download and installl the
 Windows version of MATLAB Runtime for R2019b from the following link on the MathWorks website:  
 ```
-https://se.mathworks.com/products/compiler/matlab-runtime.html
+https://www.mathworks.com/products/compiler/mcr/index.html
 
 
 ### Download 
+You can download the COMBsecretomics project on your local machine by executing (terminal/Git bash):
 ```
 $ git clone  https://github.com/EffieChantzi/COMBSecretomics.git
 ```
+You can also use the 
 
 ### Provided Directories
 - Windows_Executable: command line version of COMBSecretomics for Windows when there is not access to MATLAB
