@@ -37,7 +37,7 @@ $ git clone  https://github.com/EffieChantzi/COMBSecretomics.git
 ```
 You can also download interactively by using the button "Clone or download".
 
-### Provided Directories
+### Provided Directories upon downloading
 - Windows_Executable: command line version of COMBSecretomics for Windows when there is not access to MATLAB
 - case_study: test data of our example case study
 - source_code: source code of COMBSecretomics 
@@ -123,4 +123,4 @@ measurements for stimulated and unstimulated cells, respectively.
 
 ## License
 
-This project is licensed under the GNU GPL v3 License - see the [LICENSE.md](LICENSE.md) file for details
+COMBSecretomics is distributed under the GNU GPL v3 License - see the [LICENSE.md](LICENSE.md) file for details
