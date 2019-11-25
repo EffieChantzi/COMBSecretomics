@@ -25,7 +25,7 @@ OS: Windows, Linux, Mac OS X.
 ```
 COMBSecretomics is also provided as a command line tool that can be deployed as a 
 standalone executable on Windows machines. In this case, download and installl the
-Windows version of MATLAb Runtime for R2019b from https://se.mathworks.com/products/compiler/matlab-runtime.html.    
+Windows version of MATLAB Runtime for R2019b from https://se.mathworks.com/products/compiler/matlab-runtime.html .    
 ```
 
 ### Download 
