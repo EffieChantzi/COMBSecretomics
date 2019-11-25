@@ -119,7 +119,7 @@ measurements for stimulated and unstimulated cells, respectively.
 
 ## Authors
 
-* **Effie Chantzi** (efthymia.chantzi@medsci.uu.se)
+* **Efthymia Chantzi** (efthymia.chantzi@medsci.uu.se)
 
 ## License
 
