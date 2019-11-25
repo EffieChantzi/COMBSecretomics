@@ -27,9 +27,9 @@ clc;
 clear;
 close all;
 
-fprintf('\nComputational Medicine, Dept. of Medical Sciences\n');
+fprintf('\nCopyright (C) 2019  Efthymia Chantzi\n GNU GENERAL PUBLIC LICENSE v3');
+fprintf('\nComputational Medicine, Dept. of Medical Sciences');
 fprintf('\nUppsala University, October 2019\n');
-fprintf('\nEfthymia Chantzi & Mats G. Gustafsson\n');
 
 fprintf('\n-------------------------------------------- COMBSecretomics Initiated  --------------------------------------------\n');
 
