@@ -37,7 +37,7 @@ $ git clone  https://github.com/EffieChantzi/COMBSecretomics.git
 ```
 You can also download interactively by using the button "Clone or download".
 
-### Provided Directories upon downloading
+### Obtained Directories 
 - Windows_Executable: command line version of COMBSecretomics for Windows when there is not access to MATLAB
 - case_study: test data of our example case study
 - source_code: source code of COMBSecretomics 
