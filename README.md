@@ -35,7 +35,7 @@ You can download the COMBsecretomics project on your local machine by executing 
 ```
 $ git clone  https://github.com/EffieChantzi/COMBSecretomics.git
 ```
-You can also use the 
+You can also download interactively by using the button "Clone or download".
 
 ### Provided Directories
 - Windows_Executable: command line version of COMBSecretomics for Windows when there is not access to MATLAB
