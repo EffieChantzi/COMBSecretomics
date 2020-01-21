@@ -1,10 +1,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%     Copyright (C) 2019  Efthymia Chantzi      %%
+%%     Copyright (C) 2020  Efthymia Chantzi      %%
 %%        GNU General Public license v3          %%
 %%                 (LICENSE.md)                  %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%  concatenateDrugAnnot function - 19/10/29  %%
+%%  concatenateDrugAnnot function - 20/01/20  %%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This function merges the names of all drugs of a particular cluster   %

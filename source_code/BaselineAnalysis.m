@@ -1,10 +1,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%     Copyright (C) 2019  Efthymia Chantzi      %%
+%%     Copyright (C) 2020  Efthymia Chantzi      %%
 %%        GNU General Public license v3          %%
 %%                 (LICENSE.md)                  %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%  BaselineAnalysis function - 19/10/29 %%
+%%  BaselineAnalysis function - 20/01/20 %%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This function normalizes the protein release differences per plate for%

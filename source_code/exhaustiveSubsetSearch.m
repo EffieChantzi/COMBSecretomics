@@ -1,10 +1,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%     Copyright (C) 2019  Efthymia Chantzi      %%
+%%     Copyright (C) 2020  Efthymia Chantzi      %%
 %%        GNU General Public license v3          %%
 %%                 (LICENSE.md)                  %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%  exhaustiveSubsetSearch function - 19/10/29  %%
+%%  exhaustiveSubsetSearch function - 20/01/20  %%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This function performs the exhaustive subset search for the top-down  %

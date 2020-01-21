@@ -1,10 +1,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%     Copyright (C) 2019  Efthymia Chantzi      %%
+%%     Copyright (C) 2020  Efthymia Chantzi      %%
 %%        GNU General Public license v3          %%
 %%                 (LICENSE.md)                  %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%  HSAFromResampling function - 19/10/29  %%
+%%  HSAFromResampling function - 20/01/20  %%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This function calculates and visualizes statistics for the resampling %
@@ -48,11 +48,8 @@
 %                                                                       %
 %                                                                       %
 % %%%% OUTPUTS: %%%%                                                    %
-% Heatmap with descriptive statistics (i.e., 2.5^th, 50^th and 97.5^th  %
-% percentiles) for the HSA indices obtained during validation for all   %
-% combination treatments. The color coding of each row is based on the  %
-% corresponding median value (50^th percentile). The generated heatmap  %
-% is saved in the directory resDir (see above).                         %
+% Boxplot with the HSA indices obtained during validation for all       %
+% combination treatments.                                               %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -60,31 +57,23 @@
 
 function [] = HSAFromResampling(HSA_r_Q_resampl, N_higher_order, N_resampl, annot_W_HSA, extra_str_title, filename_str, BarCode, resDir, codeDir)
 
-p_low = round(prctile(HSA_r_Q_resampl, 2.5, 2), 2, 'significant');
-p_median = round(prctile(HSA_r_Q_resampl, 50, 2), 2, 'significant');
-p_high = round(prctile(HSA_r_Q_resampl, 97.5, 2), 2, 'significant');
-p_low_strings = num2cell(p_low);
-p_low_strings = cellfun(@(x) num2str(x), p_low_strings, 'UniformOutput', false);
-p_median_strings = num2cell(p_median);
-p_median_strings = cellfun(@(x) num2str(x), p_median_strings, 'UniformOutput', false);
-p_high_strings = num2cell(p_high);
-p_high_strings = cellfun(@(x) num2str(x), p_high_strings, 'UniformOutput', false);
-p_strings = cellfun(@(x, y, z) strcat('[', x, ',', y, ',', z, ']'), p_low_strings, p_median_strings, p_high_strings, 'UniformOutput', false);
-
-
 figure();
-imagesc(p_median);
-colormap('cool');
-colorbar();
-text(ones(N_higher_order, 1), 1 : N_higher_order, p_strings, 'HorizontalAlignment', 'center', 'FontSize', 8, 'FontWeight', 'Bold', ...
-                                                                                                                'FontName', 'SansSerif');
-set(gca, 'Xtick', 1 : 1, 'XTickLabel', {'[2.5^{th}, 50^{th}, 97.5^{th}] percentiles'}, 'FontSize', 10, 'FontWeight', 'Bold', ...
-                                                                                                               'FontName', 'Sans Serif');
-set(gca, 'YTick', 1 : N_higher_order, 'YTickLabel', annot_W_HSA, 'FontWeight', 'Bold', 'FontSize', 10, 'FontName', 'Sans Serif');
+boxplot(HSA_r_Q_resampl', 'Notch', 'on', 'Colors', 'm', 'Symbol', 'c+');
+grid on;
+ylabel('HSA Index', 'FontWeight', 'Bold', 'FontSize', 10, 'FontName', 'Sans Serif');
+set(gca, 'Xtick', 1 : N_higher_order, 'XTickLabel', annot_W_HSA, 'FontWeight', 'Bold', 'FontSize', 10, 'FontName', 'Sans Serif');
+set(findobj(gca, 'type', 'line'), 'linew', 1.2);
+lines = findobj(gcf, 'type', 'line', 'Tag', 'Median');
+set(lines, 'LineWidth', 1.2, 'Color', 'c');
+h = findobj(gca, 'Tag','Box');
+for j= 1 : length(h)
+   patch(get(h(j), 'XData'), get(h(j), 'YData'), 'm', 'FaceAlpha', .1);
+end
+
 if (isempty(extra_str_title))
-    title_str = sprintf('HSA Index (%d resamplings)', N_resampl);
+    title_str = sprintf('%d resamplings', N_resampl);
 else
-    title_str = sprintf('HSA Index (%d resamplings, %s)', N_resampl, extra_str_title);
+    title_str = sprintf('%d resamplings, %s', N_resampl, extra_str_title);
 end
 title(title_str, 'FontWeight', 'Bold', 'FontSize', 10, 'FontName', 'Sans Serif');
 

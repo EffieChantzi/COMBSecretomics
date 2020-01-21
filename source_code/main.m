@@ -1,10 +1,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%     Copyright (C) 2019  Efthymia Chantzi      %%
+%%     Copyright (C) 2020  Efthymia Chantzi      %%
 %%        GNU General Public license v3          %%
 %%                 (LICENSE.md)                  %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%  main script - 19/10/29  %%
+%%  main script - 20/01/20  %%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This is the main script that the user should run in order to employ   %
@@ -27,9 +27,9 @@ clc;
 clear;
 close all;
 
-fprintf('\nCopyright (C) 2019  Efthymia Chantzi\n GNU GENERAL PUBLIC LICENSE v3');
+fprintf('\nCopyright (C) 2020  Efthymia Chantzi\n GNU GENERAL PUBLIC LICENSE v3');
 fprintf('\nComputational Medicine, Dept. of Medical Sciences');
-fprintf('\nUppsala University, October 2019\n');
+fprintf('\nUppsala University, January 2020\n');
 
 fprintf('\n-------------------------------------------- COMBSecretomics Initiated  --------------------------------------------\n');
 
@@ -134,7 +134,7 @@ if (analysis_ID == 1)
     %% Top-Down Hierarchical K-means              
     ylabel_str = sprintf('Normalized release differences (%s,T,US vs. H,UT,US)', D_str);
     filename_str = 'Q3_K_Means';
-
+ 
     % Check Stability of Clustering Using Parts of Data
     r_Clusters_annot_resampl = cell(1, N_resampl);
     fprintf('\n');
@@ -204,7 +204,6 @@ else
         r_Clusters_annot_resampl = cell(1, N_resampl);
         fprintf('\n');
         for j = 1 : N_resampl
-
             fprintf('--- Resampling %d of %d ---\n', j, N_resampl);
             r_Q3_resampl_tmp = r_Q3_resampl{i, j};
             r_Clusters_annot_resampl{j} = biHierarchicalClustering(r_Q3_resampl_tmp, N_T_Q3_tmp, annot_T_S_Q3_tmp, R, -0.3); 
