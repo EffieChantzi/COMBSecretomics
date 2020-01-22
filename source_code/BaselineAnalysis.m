@@ -143,7 +143,9 @@ set(gcf, 'units', 'normalized', 'outerposition', [0 0 1 1]);
 cd(resDir);
 print -depsc -painters -r400 tmp
 movefile('tmp.eps', strcat('Pre_Processed_Raw_Baseline_Data_Median_', BarCode, '.eps'));
-clear tmp;
+
+print -dpdf -painters -r400 -bestfit tmp
+movefile('tmp.pdf', strcat('Pre_Processed_Raw_Baseline_Data_Median_', BarCode, '.pdf'));
 cd(codeDir);
 
 %% Identify string used for the disease asscociated cells
@@ -178,7 +180,9 @@ set(gcf, 'units', 'normalized', 'outerposition', [0 0 1 1]);
 cd(resDir);
 print -depsc -painters -r400 tmp
 movefile('tmp.eps', strcat('Q1_US_', BarCode, '.eps'));
-clear tmp;
+
+print -dpdf -painters -r400 -bestfit tmp
+movefile('tmp.pdf', strcat('Q1_US_', BarCode, '.pdf'));
 cd(codeDir);
 
 %% Question Q2: normalized release differences between D,T,US and D,UT,US cells
@@ -203,7 +207,9 @@ set(gcf, 'units', 'normalized', 'outerposition', [0 0 1 1]);
 cd(resDir);
 print -depsc -painters -r400 tmp
 movefile('tmp.eps', strcat('Q2_US_', BarCode, '.eps'));
-clear tmp;
+
+print -dpdf -painters -r400 -bestfit tmp
+movefile('tmp.pdf', strcat('Q2_US_', BarCode, '.pdf'));
 cd(codeDir);
 
 %% Question Q3: normalized release differences between D,T,US and H,UT,US cells
@@ -218,7 +224,9 @@ set(gcf, 'units', 'normalized', 'outerposition', [0 0 1 1]);
 cd(resDir);
 print -depsc -painters -r400 tmp
 movefile('tmp.eps', strcat('Q3_US_', BarCode, '.eps'));
-clear tmp;
+
+print -dpdf -painters -r400 -bestfit tmp
+movefile('tmp.pdf', strcat('Q3_US_', BarCode, '.pdf'));
 cd(codeDir);
 
 %% Ratios r_Q3 for all different validation datasets

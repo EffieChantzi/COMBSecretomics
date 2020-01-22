@@ -9,7 +9,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This function calculates and plots the centroids of the (sub)clusters %
 % for the top-down hierarchical K-Means clustering after validation. For%
-% more details see section 'Resamplign statistics' of the 'Results' in  %
+% more details see section 'Resampling statistics' of the 'Results' in  %
 % the main article.                                                     %
 %                                                                       %
 %                                                                       %
@@ -232,7 +232,9 @@ end
 cd(resDir);
 print -depsc -painters -r400 tmp
 movefile('tmp.eps', strcat(filename_str, '.eps'));
-clear tmp;
+
+print -dpdf -painters -r400 -bestfit tmp
+movefile('tmp.pdf', strcat(filename_str, '.pdf'));
 cd(codeDir); 
     
 end

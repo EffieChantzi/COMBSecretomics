@@ -186,7 +186,9 @@ if (~exist(path_filename_fig, 'file'))
     cd(resDir);
     print -depsc -painters -r400 tmp
     movefile('tmp.eps', strcat('Raw_Data_CV_Proteins_Median_', BarCode, '.eps'));
-    clear tmp;
+    
+    print -dpdf -painters -r400 -bestfit tmp
+    movefile('tmp.pdf', strcat('Raw_Data_CV_Proteins_Median_', BarCode, '.pdf'));
     cd(codeDir);
 end
 
@@ -225,7 +227,9 @@ if (~exist(path_filename_fig, 'file'))
     cd(resDir);
     print -depsc -painters -r400 tmp
     movefile('tmp.eps', strcat('Pre_Processed_Raw_Data_Median_', BarCode, '.eps'));
-    clear tmp;
+    
+    print -dpdf -painters -r400 -bestfit tmp
+    movefile('tmp.pdf', strcat('Pre_Processed_Raw_Data_Median_', BarCode, '.pdf'));
     cd(codeDir);
 end
 

@@ -70,7 +70,9 @@ set(gcf, 'units', 'normalized', 'outerposition', [0 0 1 1]);
 cd(resDir);
 print -depsc -painters -r400 tmp
 movefile('tmp.eps', strcat(filename_str, '.eps'));
-clear tmp;
+
+print -dpdf -painters -r400 -bestfit tmp
+movefile('tmp.pdf', strcat(filename_str, '.pdf'));
 cd(codeDir);
 
 

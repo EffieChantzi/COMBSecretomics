@@ -117,6 +117,12 @@ end
 
 if (fig_flag)
     
+    if (isempty(extra_str_title))
+        filename = strcat('HSA_', question_ID);
+    else
+        filename = strcat('HSA_', extra_str_title, '_', question_ID);
+    end
+    
     figure();
     h = heatmap({'all proteins'}, annot_W_HSA, round(HSA_r_Q, 2, 'significant'));
     if (isempty(extra_str_title))
@@ -128,13 +134,10 @@ if (fig_flag)
     set(gcf, 'units', 'normalized', 'outerposition', [0 0 1 1]);
     cd(resDir);
     print -depsc -painters -r400 tmp
-    if (isempty(extra_str_title))
-        filename = strcat('HSA_', question_ID, '.eps');
-    else
-        filename = strcat('HSA_', extra_str_title, '_', question_ID, '.eps');
-    end
-    movefile('tmp.eps', filename);
-    clear tmp;
+    movefile('tmp.eps', strcat(filename, '.eps'));
+    
+    print -dpdf -painters -r400 -bestfit tmp
+    movefile('tmp.pdf', strcat(filename, '.pdf'));
     cd(codeDir);
 
 end

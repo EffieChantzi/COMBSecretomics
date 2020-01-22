@@ -157,7 +157,9 @@ set(gcf, 'units', 'normalized', 'outerposition', [0 0 1 1]);
 cd(resDir);
 print -depsc -painters -r400 tmp
 movefile('tmp.eps', strcat('Pre_Processed_Raw_Response_Data_Median_', BarCode, '.eps'));
-clear tmp;
+
+print -dpdf -painters -r400 -bestfit tmp
+movefile('tmp.pdf', strcat('Pre_Processed_Raw_Response_Data_Median_', BarCode, '.pdf'));
 cd(codeDir);
 
 %% Identify string used for the disease asscociated cells
@@ -176,9 +178,9 @@ D_str = state_ID{~state_ID_H_ind, 1};
 
 %% Question Q1: normalized release differences between D,To,Sy and H,To,Sy cells
 ind_D_UT_S = cell2mat(cellfun(@(x, y) contains(x, y), annot_W_S_unique, repmat(cellstr(strcat(D_str, '-UT-')), N_W_S_unique, 1), ...
-                                                                                                                        'UniformOutput', false));
+                                                                                                             'UniformOutput', false));
 ind_H_UT_S = cell2mat(cellfun(@(x, y) contains(x, y), annot_W_S_unique, repmat(cellstr(strcat(H_str, '-UT-')), N_W_S_unique, 1), ...
-                                                                                                                          'UniformOutput', false));
+                                                                                                             'UniformOutput', false));
 
 annot_ind_D_UT_S = annot_W_S_unique(ind_D_UT_S);
 F_D_UT_S = F_merged_S(ind_D_UT_S, :);
@@ -228,7 +230,9 @@ set(gcf, 'units', 'normalized', 'outerposition', [0 0 1 1]);
 cd(resDir);
 print -depsc -painters -r400 tmp
 movefile('tmp.eps', strcat('Q1_S_', BarCode, '.eps'));
-clear tmp;
+
+print -dpdf -painters -r400 -bestfit tmp
+movefile('tmp.pdf', strcat('Q1_S_', BarCode, '.pdf'));
 cd(codeDir);
 
 %% Question Q2: normalized release differences between D,Tx,Sy and D,To,Sy cells
@@ -295,7 +299,9 @@ for j = 1 : N_S_Q
     cd(resDir);
     print -depsc -painters -r400 tmp
     movefile('tmp.eps', strcat('Q2_', annot_ind_D_UT_S_split{j}, '_', BarCode, '.eps'));
-    clear tmp;
+    
+    print -dpdf -painters -r400 -bestfit tmp
+    movefile('tmp.pdf', strcat('Q2_', annot_ind_D_UT_S_split{j}, '_', BarCode, '.pdf'));
     cd(codeDir);
     
     annot_T_S_Q2{j} = annot_T_S_Q2_S;
@@ -353,7 +359,9 @@ for j = 1 : N_S_Q
     cd(resDir);
     print -depsc -painters -r400 tmp
     movefile('tmp.eps', strcat('Q3_', annot_ind_H_UT_S_split{j}, '_', num2str(BarCode), '.eps'));
-    clear tmp;
+    
+    print -dpdf -painters -r400 -bestfit tmp
+    movefile('tmp.pdf', strcat('Q3_', annot_ind_H_UT_S_split{j}, '_', num2str(BarCode), '.pdf'));
     cd(codeDir);
     
     annot_T_S_Q3{j} = annot_T_S_Q3_S;

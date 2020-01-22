@@ -8,19 +8,19 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This function calculates and visualizes statistics for the resampling %
-% based validation related to the generalized highest single agent (HSA)%
+% based validation related to the generalized highest single agent(GHSA)%
 % analysis. See section 'Resampling statistics' of the 'Results' in the %
 % main article text as well as 'HSA.m' for more details.                %
 %                                                                       %
 %                                                                       %
 % %%%% INPUTS %%%%                                                      %
 % HSA_r_Q_resampl: [N_higher_orderxN_resampl] matrix (see below). Each  %
-% element (i, j) contains the corresponding HSA index for combination   %
+% element (i, j) contains the corresponding GHSA index for combination  %
 % treatment i and validation dataset j.                                 %
 %                                                                       %
-% N_higher_order: number of combination treatments for which HSA indices%
-% are calculated. The number of rows in the input matrix HSA_r_Q_resampl%
-% is equal to N_higher_order (see above).                               %
+% N_higher_order: number of combination treatments for which GHSA       %
+% indices are calculated. The number of rows in the input matrix        %
+% HSA_r_Q_resampl is equal to N_higher_order (see above).               %
 %                                                                       %
 % N_resampl: user-defined number of validation datasets to be created   %
 % based on resampling. See section 'Resampling statistics' in the main  %
@@ -31,7 +31,7 @@
 % corresponding annotation for the combination treatment in well i. See %
 % function 'HSA' for more details.                                      %
 %                                                                       %
-% extra_str_title: extra string to be added in the title of the HSA     %
+% extra_str_title: extra string to be added in the title of the GHSA    %
 % figure. This is the identifier for the stimulation used (S1, S2, S3   %
 % etc) and/or the number of resamplings However, this can be modified   %
 % according to the users' preferences.                                  %
@@ -48,7 +48,7 @@
 %                                                                       %
 %                                                                       %
 % %%%% OUTPUTS: %%%%                                                    %
-% Boxplot with the HSA indices obtained during validation for all       %
+% Boxplot with the GHSA indices obtained during validation for all      %
 % combination treatments.                                               %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -60,15 +60,16 @@ function [] = HSAFromResampling(HSA_r_Q_resampl, N_higher_order, N_resampl, anno
 figure();
 boxplot(HSA_r_Q_resampl', 'Notch', 'on', 'Colors', 'm', 'Symbol', 'c+');
 grid on;
-ylabel('HSA Index', 'FontWeight', 'Bold', 'FontSize', 10, 'FontName', 'Sans Serif');
+ylim([-1 1]);
+ylabel('GHSA Index', 'FontWeight', 'Bold', 'FontSize', 10, 'FontName', 'Sans Serif');
 set(gca, 'Xtick', 1 : N_higher_order, 'XTickLabel', annot_W_HSA, 'FontWeight', 'Bold', 'FontSize', 10, 'FontName', 'Sans Serif');
-set(findobj(gca, 'type', 'line'), 'linew', 1.2);
-lines = findobj(gcf, 'type', 'line', 'Tag', 'Median');
-set(lines, 'LineWidth', 1.2, 'Color', 'c');
+set(findobj(gca, 'type', 'line'), 'LineWidth', 1.2);
 h = findobj(gca, 'Tag','Box');
-for j= 1 : length(h)
+for j = 1 : length(h)
    patch(get(h(j), 'XData'), get(h(j), 'YData'), 'm', 'FaceAlpha', .1);
 end
+set(findobj(gca, 'type', 'line', 'Tag', 'Median'), 'LineWidth', 1.2, 'Color', 'c');
+
 
 if (isempty(extra_str_title))
     title_str = sprintf('%d resamplings', N_resampl);
@@ -84,9 +85,10 @@ else
 end
 cd(resDir);
 print -depsc -painters -r400 tmp
-
 movefile('tmp.eps', strcat(filename_str, '.eps'));
-clear tmp;
+
+print -dpdf -painters -r400 -bestfit tmp
+movefile('tmp.pdf', strcat(filename_str, '.pdf'));
 cd(codeDir);
 
 end

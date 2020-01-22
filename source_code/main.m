@@ -155,7 +155,7 @@ if (analysis_ID == 1)
    
     %% Generalized Highest Single Agent Analysis
     [~, annot_W_HSA_US, N_higher_order] = HSA(r_Q3, N_T, annot_W_US_unique_treatments, '', 'Q3', resDir, codeDir, 0);
-    filename_str = 'Q3_HSA_Resampling_';
+    filename_str = 'Q3_GHSA_Resampling_';
     
     HSA_r_Q3_resampl = zeros(N_higher_order, N_resampl);
     for i = 1 : N_resampl
@@ -178,7 +178,7 @@ else
     
     %%%%%%%%%%%%%%%%%%%%%% Stimulated Cells %%%%%%%%%%%%%%%%%%%%%%%
     [r_Q1, r_Q2, r_Q3, r_Q1_Q3_S_arranged, r_Q3_resampl, annot_T_S_Q2, annot_T_S_Q3, D_str] = ResponseAnalysis(F, annot_W, F_merged, ...
-                                                                              annot_W_unique, N_P, annot_P, N_resampl, BarCode, resDir, codeDir);
+                                                                     annot_W_unique, N_P, annot_P, N_resampl, BarCode, resDir, codeDir);
                                                                                                                                                                                                
     %% Top-Down Hierachical K-means 
     %%%%%%% Q3 %%%%%%%
@@ -221,7 +221,7 @@ else
       
         %% Generalized Highest Single Agent Analysis
         [~, annot_W_HSA_S, N_higher_order] = HSA(r_Q3_tmp, N_T_Q3_tmp, annot_T_S_Q3_tmp, S_Q3, 'Q3', resDir, codeDir, 0);
-        filename_str = 'Q3_HSA_Resampling_';
+        filename_str = 'Q3_GHSA_Resampling_';
         
         HSA_r_Q3_resampl = zeros(N_higher_order, N_resampl);
         for j = 1 : N_resampl
