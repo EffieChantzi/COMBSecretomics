@@ -8,9 +8,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This function performs top-down hierarchical clustering in two levels %
-% as described in section 'Model-free higher-order drug combination     %
-% analysis' and in particular subsection 'top-down hierarchical         %
-% clustering' of the 'Results' in the main article text.                %
+% as described in section 'Model-free drug combination analysis' and in %
+% particular subsection 'Top-down hierarchical clustering' of 'Methods' %
+% in the main article text.                                             %
 %                                                                       %
 %                                                                       %
 % %%%% INPUTS %%%%                                                      %
@@ -25,7 +25,7 @@
 % tation for the corresponding treatment/cell state i.                  %
 %                                                                       %
 % R: number of repetitions/restarts for K-Means clustering (see 'main.m'%
-% where R is set to 30, this can be changed).                           %
+% where R is set to 30, this can be changed by the user).               %
 %                                                                       %
 % tau_SSE_drop: drop in the sum of squared errors (SSE) when transitio- %
 % ning from k-1 to k as the number of clusters to be used (see function %

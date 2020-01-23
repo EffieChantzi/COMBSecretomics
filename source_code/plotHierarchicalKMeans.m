@@ -8,9 +8,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This function calculates and plots the centroids of the (sub)clusters %
-% for the top-down hierarchical K-Means clustering after validation. For%
-% more details see section 'Resampling statistics' of the 'Results' in  %
-% the main article.                                                     %
+% for the top-down hierarchical K-Means clustering after resampling     %
+% based validation. For more details see section 'Resampling statistics'%
+% of 'Methods' in the the main article.                                 %
 %                                                                       %
 %                                                                       %
 % %%%% INPUTS %%%%                                                      %

@@ -9,7 +9,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This function performs quality control for the collected raw data as  %
 % thoroughly described in section 'Quality control explained' in the    %
-% Supplementary Information.                                            %
+% Supplement.                                                           %
 %                                                                       %
 %                                                                       %
 % %%%% INPUTS %%%%                                                      %

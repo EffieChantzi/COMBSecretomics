@@ -8,9 +8,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This function performs the generalized highest single agent analysis  %
-% (HSA) in terms of multi-dimensional protein release patterns for any  %
+% (GHSA) in terms of multi-dimensional protein release patterns for any %
 % combination order. See section 'Generalization of the highest single  %
-% agent principle' of the Results in the main article for more details. %
+% agent principle' of 'Methods' in the main article for more details.   %
 %                                                                       %
 %                                                                       %
 % %%%% INPUTS %%%%                                                      %
@@ -23,7 +23,7 @@
 %                                                                       %
 % annot_W: cell array with as many cells as N_T (see above). Each cell  %
 % cell {i} contains the annotation for the corresponding treatment of   %
-% in well i. For more details, see section 'Example raw data file' of   %
+% in well i. For more details, see section 'Example raw data file' in   %
 % the Supplement.                                                       %
 %                                                                       %
 % extra_str_title: extra string to be added in the title of the HSA     %
@@ -42,7 +42,7 @@
 % codeDir: directory with the source code.                              %
 %                                                                       %
 % flag_fig: numeric identifier, which must be set to 1 for generating   %
-% the HSA figure and 0 otherwise.                                       %
+% the GHSA figure and 0 otherwise.                                      %
 %                                                                       %
 %                                                                       %
 % %%%% OUTPUTS: %%%%                                                    %
@@ -53,12 +53,12 @@
 % annot_W_HSA: annotations for combination treatments as a cell array   %
 % {N_higher_orderx1}. A particular cell {i} contains the corresponding  %
 % annotation for the combination treatment in well i. For more details, %
-% see section 'Example raw data file' in the Supplementary Information. %
+% see section 'Example raw data file' in the Supplement.                %
 %                                                                       %
 % N_higher_order: rows of output HSA_r_Q (see above), meaning the number%
 % of combination treatments used.                                       %
 %                                                                       %
-% !! If fig_flag set to 1, a heatmap with the HSA indices for all       %
+% !! If fig_flag set to 1, a heatmap with the GHSA indices for all      %
 % N_higher_order combination treatments is generated and saved under    %
 % resDir (see above).                                                   %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -66,7 +66,7 @@
 
 %==============================================================================================================================================
 
-function [HSA_r_Q, annot_W_HSA, N_higher_order] = HSA(r_Q, N_T, annot_W, extra_str_title, question_ID, resDir, codeDir, fig_flag)
+function [HSA_r_Q, annot_W_HSA, N_higher_order] = GHSA(r_Q, N_T, annot_W, extra_str_title, question_ID, resDir, codeDir, fig_flag)
 
 if (fig_flag ~= 0) && (fig_flag ~= 1)
    

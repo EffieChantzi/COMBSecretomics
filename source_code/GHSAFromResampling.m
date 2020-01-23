@@ -9,8 +9,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This function calculates and visualizes statistics for the resampling %
 % based validation related to the generalized highest single agent(GHSA)%
-% analysis. See section 'Resampling statistics' of the 'Results' in the %
-% main article text as well as 'HSA.m' for more details.                %
+% analysis. See section 'Resampling statistics' of 'Methods' in the %
+% main article text as well as 'GHSA.m' for more details.                %
 %                                                                       %
 %                                                                       %
 % %%%% INPUTS %%%%                                                      %
@@ -55,7 +55,7 @@
 
 %==============================================================================================================================================
 
-function [] = HSAFromResampling(HSA_r_Q_resampl, N_higher_order, N_resampl, annot_W_HSA, extra_str_title, filename_str, BarCode, resDir, codeDir)
+function [] = GHSAFromResampling(HSA_r_Q_resampl, N_higher_order, N_resampl, annot_W_HSA, extra_str_title, filename_str, BarCode, resDir, codeDir)
 
 figure();
 boxplot(HSA_r_Q_resampl', 'Notch', 'on', 'Colors', 'm', 'Symbol', 'c+');

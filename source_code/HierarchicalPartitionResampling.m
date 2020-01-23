@@ -9,8 +9,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This function finds and plots the most common unique partitions in the%
 % 1st and 2nd hierarchical levels among all resampling-based validation %
-% datasets. For more details, see section 'Resampling statistics' of the%
-% 'Results' in the main article.                                        %
+% datasets. For more details, see section 'Resampling statistics' of    %
+% 'Methods' in the main article.                                        %
 %                                                                       %
 %                                                                       %
 % %%%% INPUTS %%%%                                                      %

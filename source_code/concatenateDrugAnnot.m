@@ -9,7 +9,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This function merges the names of all drugs of a particular cluster   %
 % in one unique string that is used for the corresponding legend in the %
-% hierarchical clustering figure after validation.                      %
+% hierarchical clustering figure after the resampling-based validation. %
 %                                                                       %
 %                                                                       %
 % %%%% INPUTS %%%%                                                      %

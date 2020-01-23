@@ -8,9 +8,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This function finds the unique partitions in each hierarchical level  %
-% as obtained from the top-down K-Means clustering for all different    %
-% resampling based validation datasets. For more details, see section   %
-% 'Resampling statistics' of the 'Results' in the main article text.    %
+% as obtained from the top-down hierarchical K-Means clustering for all %
+% different resampling-based validation datasets. For more details, see %
+% section 'Resampling statistics' of 'Results' in the main article text.%
 %                                                                       %
 %                                                                       %
 % %%%% INPUTS %%%%                                                      %

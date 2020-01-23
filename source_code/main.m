@@ -154,17 +154,17 @@ if (analysis_ID == 1)
                                                                                               exhaustiveSearch_ID, BarCode, resDir, codeDir);
    
     %% Generalized Highest Single Agent Analysis
-    [~, annot_W_HSA_US, N_higher_order] = HSA(r_Q3, N_T, annot_W_US_unique_treatments, '', 'Q3', resDir, codeDir, 0);
+    [~, annot_W_HSA_US, N_higher_order] = GHSA(r_Q3, N_T, annot_W_US_unique_treatments, '', 'Q3', resDir, codeDir, 0);
     filename_str = 'Q3_GHSA_Resampling_';
     
     HSA_r_Q3_resampl = zeros(N_higher_order, N_resampl);
     for i = 1 : N_resampl
        
-        [HSA_r_Q3_resampl(:, i), ~, ~] = HSA(r_Q3_resampl{i}, N_T, annot_W_US_unique_treatments, '', 'Q3', resDir, codeDir, 0);
+        [HSA_r_Q3_resampl(:, i), ~, ~] = GHSA(r_Q3_resampl{i}, N_T, annot_W_US_unique_treatments, '', 'Q3', resDir, codeDir, 0);
 
     end
     
-    HSAFromResampling(HSA_r_Q3_resampl, N_higher_order, N_resampl, annot_W_HSA_US, '', filename_str, BarCode, resDir, codeDir);
+    GHSAFromResampling(HSA_r_Q3_resampl, N_higher_order, N_resampl, annot_W_HSA_US, '', filename_str, BarCode, resDir, codeDir);
    
     %%%%%%%%%%%%%%%%%%%%%% Unstimulated Cells %%%%%%%%%%%%%%%%%%%%%%%
     
@@ -220,18 +220,18 @@ else
                                                                     N_resampl, filename_str, exhaustiveSearch_ID, BarCode, resDir, codeDir);   
       
         %% Generalized Highest Single Agent Analysis
-        [~, annot_W_HSA_S, N_higher_order] = HSA(r_Q3_tmp, N_T_Q3_tmp, annot_T_S_Q3_tmp, S_Q3, 'Q3', resDir, codeDir, 0);
+        [~, annot_W_HSA_S, N_higher_order] = GHSA(r_Q3_tmp, N_T_Q3_tmp, annot_T_S_Q3_tmp, S_Q3, 'Q3', resDir, codeDir, 0);
         filename_str = 'Q3_GHSA_Resampling_';
         
         HSA_r_Q3_resampl = zeros(N_higher_order, N_resampl);
         for j = 1 : N_resampl
 
             r_Q3_resampl_tmp = r_Q3_resampl{i, j};
-            [HSA_r_Q3_resampl(:, j), ~, ~] = HSA(r_Q3_resampl_tmp , N_T_Q3_tmp, annot_T_S_Q3_tmp, S_Q3, 'Q3', resDir, codeDir, 0);
+            [HSA_r_Q3_resampl(:, j), ~, ~] = GHSA(r_Q3_resampl_tmp , N_T_Q3_tmp, annot_T_S_Q3_tmp, S_Q3, 'Q3', resDir, codeDir, 0);
 
         end
         
-        HSAFromResampling(HSA_r_Q3_resampl, N_higher_order, N_resampl, annot_W_HSA_S, S_Q3, filename_str, BarCode, resDir, codeDir);
+        GHSAFromResampling(HSA_r_Q3_resampl, N_higher_order, N_resampl, annot_W_HSA_S, S_Q3, filename_str, BarCode, resDir, codeDir);
    
     end                                                                                                              
     %%%%%%%%%%%%%%%%%%%%%% Stimulated Cells %%%%%%%%%%%%%%%%%%%%%%%

@@ -9,7 +9,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This function performs the exhaustive subset search for the top-down  %
 % hierarchical clustering as described in the subsection 'Top-down      %
-% hierarchical clustering' of the 'Results' in the main article.        %
+% hierarchical clustering' of 'Methods' in the main article.            %
 %                                                                       %
 %                                                                       %
 % %%%% INPUTS %%%%                                                      %

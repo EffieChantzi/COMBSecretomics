@@ -9,7 +9,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This function normalizes the protein release differences per plate    %
 % for stimulated cells. More precisely, this function gives answers to  %
-% questions Q1-Q3 described in the 'Results' section of the article     %
+% questions Q1-Q3 described in the 'Methods' section of the article     %
 % under the subsection 'Normalization of protein release differences'.  %
 %                                                                       %
 %                                                                       %
