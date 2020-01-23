@@ -113,8 +113,8 @@ created directory with the name 'Results'. All results from the quality control 
 averaging are saved as colored figures in EPS format in addition to a CSV file, which contains a
 table with all raw protein release measurements after quality control and before intra-plate 
 averaging. Under 'Results', two subdirectories are created with the name 'Stimulated' and 
-'Unstimulated' containing all results (in EPS format) from the analyses using the protein release
-measurements for stimulated and unstimulated cells, respectively. 
+'Unstimulated' containing all results (in EPS and PDF format) from the analyses using the protein
+release measurements for stimulated and unstimulated cells, respectively. 
 
 
 ## Authors
