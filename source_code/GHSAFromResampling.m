@@ -84,10 +84,10 @@ else
     filename_str = strcat(filename_str, num2str(N_resampl), '_', extra_str_title, '_', BarCode);
 end
 cd(resDir);
-print -depsc -painters -r400 tmp
+print -depsc -painters -r600 tmp
 movefile('tmp.eps', strcat(filename_str, '.eps'));
 
-print -dpdf -painters -r400 -bestfit tmp
+print -dpdf -painters -r600 -bestfit tmp
 movefile('tmp.pdf', strcat(filename_str, '.pdf'));
 cd(codeDir);
 
