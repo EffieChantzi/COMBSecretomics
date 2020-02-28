@@ -72,7 +72,7 @@ the Supplementary Information.
 2. The user is asked to select the cut-off threshold (in percent) for the blank filtering
 (see section "Blank filtering" in the Supplementary Information for more details). 
 
-Here, the value **15** was used. 
+Here, the value 15 was used. 
 
 Other values can be set accordingly. A low value ensures that
 protein release measurements with low levels of noise are kept for further analysis.
@@ -80,15 +80,21 @@ protein release measurements with low levels of noise are kept for further analy
 ```
 3. The user is asked to select the cut-off threshold (in percent) for the coefficient of 
 variation of the protein release measurements (see section "Coefficient of variation" in
-the Supplementary Information for more details). In our case study the value 25 was used.
+the Supplementary Information for more details). 
+
+Here, the value 25 was used.
+
 Other values can be set accordingly. A low value ensures that proteins with low levels of
 technical variability are kept for further analysis.
 ```
 
 ```
 4. The user is asked to enter the number of resampling based validation datasets to be 
-created (see section "Resampling statistics" in the main article for more details). In 
-our study the value 500 was used. Other values can be set accordingly. The higher this 
+created (see section "Resampling statistics" in the main article for more details). 
+
+Here, the value 500 was used.
+
+Other values can be set accordingly. The higher this 
 number, the more datasets are going to be created, which is advisable especially if 
 several intra-plate replicate measurements are employed. 
 ```
@@ -96,9 +102,11 @@ several intra-plate replicate measurements are employed.
 ```
 5. The user is asked to select if exhaustive subset search should be performed or not for 
 the visualization of the results from the top-down hierarchical K-Means clustering. Enter
-1 for yes and 2 for no. In our case study, option 1 was used for the main article (Fig. 5) 
-and option 2 for the supplementary information (Supplementary Fig. S18). It is highly 
-recommended to use option 1 for big exhaustive combination panels (i.e., when more than 4 
+1 for yes and 2 for no. 
+
+Here, option 1 was used for the main article (Fig 5) and option 2 for the supplementary information (S18 Fig).
+
+It is highly recommended to use option 1 for big exhaustive combination panels (i.e., when more than 4 
 single drugs are used to desing an exhaustive experiment).
 ```
 
