@@ -72,7 +72,7 @@ the Supplementary Information.
 2. The user is asked to select the cut-off threshold (in percent) for the blank filtering
 (see section "Blank filtering" in the Supplementary Information for more details). 
 
-Here, the value 15 was used. 
+Here, the value **15** was used. 
 
 Other values can be set accordingly. A low value ensures that
 protein release measurements with low levels of noise are kept for further analysis.
