@@ -92,7 +92,7 @@ technical variability are kept for further analysis.
 4. The user is asked to enter the number of resampling based validation datasets to be 
 created (see section "Resampling statistics" in the main article for more details). 
 
-Here, the value 500 was used.
+Here, the value 1000 was used.
 
 Other values can be set accordingly. The higher this 
 number, the more datasets are going to be created, which is advisable especially if 
